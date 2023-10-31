@@ -76,7 +76,7 @@ def randomInterpolate(points, min_point):
     return random_x, random_y
 
 def minJsonDump(o):
-    return json.dumps(o, separators=(',', ':'))
+    return json.dumps(o, separators=(',', ':'), sort_keys=True)
 
 class Proof(TypedDict):
     nonce: int
